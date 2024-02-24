@@ -5,6 +5,6 @@
 from App.GUI import *
 
 
-# placeholder function (menu's go here)
+# menu functions
 def placeholder():
     pass  # Stub
