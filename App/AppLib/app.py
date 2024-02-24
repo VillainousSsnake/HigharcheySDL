@@ -11,7 +11,6 @@ class App:
         self.returnStatement = "main"
         self.settings = {
             "current_theme": Config.get_setting("current_theme"),
-            "romfs_location": Config.get_setting("romfs_location")
         }
         match self.settings["current_theme"]:
 
