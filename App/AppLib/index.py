@@ -5,6 +5,6 @@
 from App.GUI import *
 
 
-# menu functions
-def placeholder():
+# Index class (Holds menu functions)
+class Index:
     pass  # Stub
