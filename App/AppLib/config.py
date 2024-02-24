@@ -5,7 +5,7 @@
 import os
 
 # Creating default_settings
-default_settings = ''''''  # Replace with default settings
+default_settings = '''current_theme = Purple'''  # Replace with default settings
 
 
 class Config:
