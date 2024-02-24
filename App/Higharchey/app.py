@@ -2,19 +2,16 @@
 # Contains App class
 
 # Importing Modules
-from Higharchey.config import Config
+from App.Higharchey.config import Config
 
 
 # App class
 class App:
     def __init__(self):
         self.returnStatement = "main"
-        self.romfs_location = Config.get_setting("romfs_location")
         self.settings = {
-            "buttons_pop": Config.get_setting("buttons_pop"),
-            "buttons_highlight": Config.get_setting("buttons_highlight"),
-            "verbose_output": Config.get_setting("verbose_output"),
             "current_theme": Config.get_setting("current_theme"),
+            "romfs_location": Config.get_setting("romfs_location")
         }
         match self.settings["current_theme"]:
 
