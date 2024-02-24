@@ -5,8 +5,7 @@
 import os
 
 # Creating default_settings
-default_settings = '''romfs_location: none
-current_theme: Purple'''
+default_settings = ''''''  # Replace with default settings
 
 
 class Config:
