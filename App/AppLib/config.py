@@ -87,11 +87,9 @@ class Config:
         for item in data:
 
             # Skipping blank lines
-            if item == "":
-                break
-
-            # Creating the entry for the new_data dict
-            new_data[item.split(": ")[0]] = item.split(": ")[1]
+            if item != "\n" and item != "":
+                # Creating the entry for the new_data dict
+                new_data[item.split(": ")[0]] = item.split(": ")[1]
 
         output = new_data[entry]
         if output.lower() == 'true':
@@ -127,11 +125,9 @@ class Config:
         for item in data:
 
             # Skipping blank lines
-            if item == "":
-                break
-
-            # Creating the entry for the new_data dict
-            new_data[item.split(": ")[0]] = item.split(": ")[1]
+            if item != "\n" and item != "":
+                # Creating the entry for the new_data dict
+                new_data[item.split(": ")[0]] = item.split(": ")[1]
 
         # Detecting booleans in the value and converting them to strings
         if value is True:
